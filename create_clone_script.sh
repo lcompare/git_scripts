@@ -1,4 +1,5 @@
 #!/bin/bash
+# script to create a script to clone several repositories in a directory
 curr_dir=$(pwd)
 echo "#!/bin/bash" > clone.sh
 chmod +x clone.sh

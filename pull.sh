@@ -1,4 +1,6 @@
 #!/bin/bash
+#script to pull from all repositories in a directory
+
 force="false"
 
 while getopts b:f flag
