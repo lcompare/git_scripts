@@ -36,7 +36,6 @@ q_continue () {
 }
 
 git_pull (){
-  echo $force
   git checkout "$branch"
   echo "git pull"
   git pull
@@ -52,6 +51,5 @@ for d in */ ; do
   echo "repo $i of $dir_count"
   echo "cd $curr_dir/$d"
   cd "$curr_dir/$d"
-  if (( "$i" == "$dir_count" )); then echo "equal"; fi
   git_pull $branch $i $force
 done
